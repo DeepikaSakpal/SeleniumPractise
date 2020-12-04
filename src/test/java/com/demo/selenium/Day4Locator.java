@@ -19,11 +19,6 @@ public class Day4Locator {
 		driver.findElement(By.id("loginbutton")).click();
 		//driver.findElement(By.linkText("Log In")).click();
 		
-		
-		
-		
-		
-		
 
 	}
 
