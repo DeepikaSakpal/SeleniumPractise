@@ -12,4 +12,4 @@ Feature: Logout functionality from consumer side
     When User click on profile icon
     And user click on Sign Out Link
     Then user is signed out from application successfully
-    And Browser closes
+    And Browser get close
