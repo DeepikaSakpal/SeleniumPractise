@@ -63,12 +63,16 @@ public class SignoutPractiseSteps extends testBasePractise {
 			new WebDriverWait(driver, 30).until(ExpectedConditions.titleContains("Ad Giants > Login"));
 		    
 			if(driver.getTitle().contains("Ad Giants > Login")) {
-				
+				System.out.println("title:"+driver.getTitle());
 				   System.out.println("User moved to Login page");
 			   }
 			else {
 				   System.out.println("something went wrong.");
 			   }
+		}
+		@And("^Browser get close$")
+		public void browser_get_close() throws Throwable {
+		driver.close();
 		}
 		
 
