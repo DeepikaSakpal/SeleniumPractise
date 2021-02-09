@@ -11,7 +11,6 @@ Feature: Validate the forgot password functionality
   Scenario: Temparary Password is sent to entered email id
   Then Enter the email id
   And click on Next
-  Then temparary password is sent to email id
   And User is redirected to Recover Password page
   Then User can see some instruction text
   And user click on Click Here link
@@ -20,7 +19,7 @@ Feature: Validate the forgot password functionality
     
 
  @RedirectToLoginPage
- Scenario: NBack button navigates back to Login Page
+ Scenario: Back button navigates back to Login Page
  Then Enter the email id
  And Click on Back 
  Then user is redirected to Login Page
